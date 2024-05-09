@@ -1,0 +1,22 @@
+module.exports = {
+  mysql: {
+    host: process.env.MYSQL_HOST || "127.0.0.1",
+    port: process.env.MYSQL_PORT || "3306",
+    user: process.env.MYSQL_USER || "root",
+    password: process.env.MYSQL_PASSWORD || "",
+    database: process.env.MYSQL_DATABASE || "x-institute",
+  },
+  JWT_SECRET: process.env.JWT_SECRET,
+  CRYPTO_KEY: process.env.CRYPTO_KEY,
+  CRYPTO_IV: process.env.CRYPTO_IV,
+  COS_SECRETID: process.env.COS_SECRETID,
+  COS_SECRETKEY: process.env.COS_SECRETKEY,
+  COS_REGION: process.env.COS_REGION,
+  COS_BUCKET: process.env.COS_BUCKET,
+  SMS_SECRETID: process.env.SMS_SECRETID,
+  SMS_SECRETKEY: process.env.SMS_SECRETKEY,
+  SMS_REGION: process.env.SMS_REGION,
+  SMS_APPID: process.env.SMS_APPID,
+  SMS_CODE_SIGNNAME: process.env.SMS_CODE_SIGNNAME,
+  SMS_CODE_TEMPLATEID: process.env.SMS_CODE_TEMPLATEID,
+};
